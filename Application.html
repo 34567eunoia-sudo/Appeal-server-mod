@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Form</title>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "kRhCGFxIQ3fcCEZ5b",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+
+</head>
+
+<body>
+    
+    
+<form action="action_page.php" method="post">
+<message>
+    <label for="Username">Username:</label>
+    <input type="text" id="Username" name="Username" placeholder="Goobygoob_ty" required><br><br>
+
+    <h4 style="color: crimson;">Remember if you changed your pre-server Profile display please put that same display so we know it's you</h4>
+    <label for="Display">Display</label>
+    <input type="text" id="Display" name="Display" placeholder="☆ o 🌸📼 Odo Cxi/Mod/📼🌸o ☆" required><br><br>
+
+   <label for="Bdate">birthdate</label>
+    <input type="date" id="Bdate" name="Bdate" required><br><br>
+
+    <h2 style="color: crimson;">Questions now</h2>
+<h3>What would you do if your friend breaked a rule?</h3>
+ <input type="text" id="Que1" name="Que1" placeholder="I would..." required><br><br>
+
+<h3>What would you do if you see someone breaking a rule?</h3>
+    <input type="text" id="Que2" name="Que2" placeholder="I would..." required><br><br>
+
+<h3>What Would you do if someone broke a rule with they have a 4th warning?</h3>
+    <input type="text" id="Que3" name="Que3" placeholder="I would..." required><br><br>
+
+    <h3>What would you do if a moderator broke a rule that might cost being kicked out?</h3>
+    <input type="text" id="Que4" name="Que4" placeholder="I would..." required><br><br>
+
+    <h3>What illness do you have that we should know about?</h3>
+    <input type="text" id="Que5" name="Que5" placeholder="I have..." required><br><br>
+
+    <h3>Do you have any experience with moderating?</h3>
+    <input type="text" id="Que6" name="Que6" placeholder="Yes,I have..." required><br><br>
+
+    <h3>Why do you want to be a moderator?</h3>
+    <input type="text" id="Que7" name="Que7" placeholder="I want to be a moderator because..." required><br><br>
+
+    <button type="submit" onclick="sendmail()">Submit</button>
+
+    <button type="reset">Reset</button>
+    </message>
+  </form>
+
+
+
+</body>
+
+
+
+
+
+</html>
